@@ -43,7 +43,7 @@
             background-color: var(--miffy-blue);
             /* 指定背景圖 */
             background-image: url('https://i.pinimg.com/1200x/96/51/0b/96510ba8c7855de07b4696f8bccdb75c.jpg');
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             background-attachment: fixed;
             min-height: 100vh;
@@ -282,7 +282,7 @@
             min-width: 130px;
             background: var(--miffy-white);
             border-radius: 20px;
-            padding: 15px 10px;
+            padding: 15px 16px;
             text-align: center;
             border: var(--border-width) solid var(--miffy-black);
             flex-shrink: 0;
@@ -418,7 +418,7 @@
 
         function getTimePeriod(startTime) {
             const hour = new Date(startTime).getHours();
-            if (hour >= 5 && hour < 11) return "早晨";
+            if (hour >= 5 && hour < 11) return "早上";
             if (hour >= 11 && hour < 14) return "中午";
             if (hour >= 14 && hour < 18) return "下午";
             if (hour >= 18 && hour < 23) return "晚上";
