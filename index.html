@@ -241,12 +241,13 @@
         }
 
         .outfit-img {
-            max-width: 200px;
-            height: auto;
-            object-fit: contain;
+
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;   /* 自動裁切填滿 */
             border-radius: 40px;
-            /* 讓圖片看起來像貼紙 */
             filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.1));
+
         }
 
         .outfit-text {
@@ -355,17 +356,18 @@
 
         <div id="heroCard"></div>
 
-        <div class="outfit-section">
+        <h3 class="section-title">• 稍後預報 • </h3>
+        <div class="scroll-container" id="futureForecasts">
+            </div>
+
+
+            <div class="outfit-section">
             <div class="outfit-title">今日 miffy 穿搭</div>
             <div class="outfit-img-container">
                 <img id="outfitImage" class="outfit-img" src="" alt="Miffy Outfit">
             </div>
             <div id="outfitText" class="outfit-text"></div>
         </div>
-
-        <h3 class="section-title">• 稍後預報 • </h3>
-        <div class="scroll-container" id="futureForecasts">
-            </div>
 
     </div>
 
