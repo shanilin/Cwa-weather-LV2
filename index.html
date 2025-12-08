@@ -351,7 +351,7 @@
 
     <div id="loading" class="loading-screen">
         <div style="font-size: 4rem; animation: bounce 2s infinite alternate;"> • ༝ • </div>
-        <div class="loading-text"> miffy  正在看天氣...</div>
+        <div class="loading-text"> miffy 在看天氣...</div>
     </div>
 
     <div class="status-bar">
@@ -404,20 +404,20 @@
             let rainIcon = "🌤️";
             let rainText = "不用帶傘";
             if (parseInt(rainProb) > 30) {
-                rainIcon = "☂";
+                rainIcon = "☔";
                 rainText = "記得帶傘！";
             }
 
-            let clothIcon = "👕";
-            let clothText = "短袖薄外套";
+            let clothIcon = "🧥";
+            let clothText = "長袖 + 外套";
             const temp = parseInt(maxTemp);
 
-            if (temp >= 28) {
-                clothIcon = "🎽";
+            if (temp >= 23) {
+                clothIcon = "👕🕶️";
                 clothText = "天熱穿短袖";
-            } else if (temp <= 20) {
-                clothIcon = "🧥";
-                clothText = "天冷帶外套";
+            } else if (temp <= 17) {
+                clothIcon = "❄️🧣";
+                clothText = "天冷戴圍巾";
             }
 
             return { rainIcon, rainText, clothIcon, clothText };
@@ -443,17 +443,17 @@
             if (t >= 23) {
                 // 23度以上：穿短袖
                 imgEl.src = IMAGES.hot;
-                textEl.textContent = `現在 ${t}°C，穿短袖記得防曬喔！`;
+                textEl.textContent = `現在${t}°C，穿短袖記得防曬喔！`;
                 textEl.style.color = "#58504A"; 
             } else if (t >= 18) {
                 // 18~22度：穿長袖
                 imgEl.src = IMAGES.warm;
-                textEl.textContent = `現在 ${t}°C 微涼，穿件長袖吧！`;
+                textEl.textContent = `現在${t}°C 微涼，穿件長袖吧！`;
                 textEl.style.color = "#58504A"; 
             } else {
                 // 17度以下：圍巾
                 imgEl.src = IMAGES.cold;
-                textEl.textContent = `現在 ${t}°C，好冷喔！記得戴圍巾！`;
+                textEl.textContent = `現在${t}°C，好冷喔！記得戴圍巾！`;
                 textEl.style.color = "#58504A"; 
             }
         }
