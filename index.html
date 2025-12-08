@@ -443,18 +443,18 @@
             if (t >= 23) {
                 // 23度以上：穿短袖
                 imgEl.src = IMAGES.hot;
-                textEl.textContent = `現在${t}°C，穿短袖記得防曬喔！`;
+                textEl.textContent = `現在  ${t}°C，穿短袖記得防曬喔！`;
                 textEl.style.color = "#58504A"; 
             } else if (t >= 18) {
                 // 18~22度：穿長袖
                 imgEl.src = IMAGES.warm;
-                textEl.textContent = `現在${t}°C 微涼，穿件長袖吧！`;
-                textEl.style.color = "#58504A"; 
+                textEl.textContent = `現在  ${t}°C 微涼，穿件長袖吧！`;
+                textEl.style.color = "#005C9F"; 
             } else {
                 // 17度以下：圍巾
                 imgEl.src = IMAGES.cold;
-                textEl.textContent = `現在${t}°C，好冷喔！記得戴圍巾！`;
-                textEl.style.color = "#58504A"; 
+                textEl.textContent = `現在  ${t}°C 好冷喔！記得戴圍巾！`;
+                textEl.style.color = "#005C9F"; 
             }
         }
 
