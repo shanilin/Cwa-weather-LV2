@@ -210,13 +210,14 @@
 
         /* === 穿搭建議區 (新增區域) === */
         .outfit-section {
-            background: #DDDDDD;
             border: var(--border-width) solid var(--miffy-black);
             border-radius: var(--card-radius);
             padding: 24px;
             margin-bottom: 30px;
             text-align: center;
             box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(155, 138, 123, 0.04) 2px, rgba(155, 138, 123, 0.04) 4px), radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%) rgba(250, 247, 240, 0.85);
+            /*背景是線條紙材質*/
         }
 
         .outfit-title {
@@ -241,7 +242,6 @@
         }
 
         .outfit-img {
-
             max-width: 200px;
             aspect-ratio: 3 / 4;
             object-fit: cover;   /* 自動裁切填滿 */
@@ -280,13 +280,13 @@
 
         .mini-card {
             min-width: 130px;
-            background: var(--miffy-white);
             border-radius: 20px;
             padding: 15px 16px;
             text-align: center;
             border: var(--border-width) solid var(--miffy-black);
             flex-shrink: 0;
             box-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+            background: var(--miffy-white);
         }
 
         .mini-time {
